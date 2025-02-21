@@ -1,3 +1,74 @@
+## 🚀 Guia de Git - Fluxo de Trabalho
+
+### 📌 Criar uma nova branch
+```bash
+git checkout -b nome-da-branch
+```
+> Substitua `nome-da-branch` pelo nome desejado, por exemplo, `feature/nova-funcionalidade`.
+
+---
+
+### 📤 Enviar alterações para o repositório remoto
+1. **Adicionar os arquivos ao commit:**
+   ```bash
+   git add .
+   ```
+2. **Criar um commit com uma mensagem descritiva:**
+   ```bash
+   git commit -m "Descrição do que foi feito"
+   ```
+3. **Enviar a branch para o GitHub:**
+   ```bash
+   git push origin nome-da-branch
+   ```
+
+---
+
+### 🔄 Fazer o merge da branch com a `main`
+1. **Mudar para a branch `main`**
+   ```bash
+   git checkout main
+   ```
+2. **Atualizar a branch `main`** (caso tenha mudanças no repositório remoto):
+   ```bash
+   git pull origin main
+   ```
+3. **Fazer o merge da branch desejada:**
+   ```bash
+   git merge nome-da-branch
+   ```
+4. **Enviar a branch `main` atualizada para o GitHub:**
+   ```bash
+   git push origin main
+   ```
+
+---
+
+### 🔀 Mudar de branch
+```bash
+git checkout nome-da-branch
+```
+> Para listar todas as branches disponíveis:
+```bash
+git branch
+```
+
+---
+
+### 🗑️ Deletar uma branch
+- **Remover uma branch local:**
+  ```bash
+  git branch -d nome-da-branch
+  ```
+- **Remover uma branch do GitHub:**
+  ```bash
+  git push origin --delete nome-da-branch
+  ```
+
+Esse guia ajudará a manter um fluxo de trabalho organizado e eficiente com Git! 🚀
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
