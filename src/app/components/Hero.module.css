@@ -1,0 +1,13 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: conic-gradient(
+      from 0deg,
+      #0b2a66  50deg, #0b2a66  64deg, /* Rosa com transição */
+      #0b2a66  64deg, #1a48e094 75deg, #173bb1 150deg, /* Azul escuro com transição */
+      #800080 175deg, #800080 190deg, #d10070 290deg, /* Azul claro com transição */
+      #0b2a66  325deg /* Fechando o loop no rosa */
+);
+}
