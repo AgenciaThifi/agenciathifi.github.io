@@ -5,11 +5,12 @@ import Depoimentos from "../app/components/Depoimentos";
 import Faq from "../app/components/Faq";
 import Cta from "../app/components/Cta";
 import Rodape from "../app/components/Rodape";
-
+import NavBar from "../app/components/NavBar";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
+      <NavBar />
       <Hero />
       <Clientes />
       <Destaques />
