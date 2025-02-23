@@ -6,12 +6,14 @@ import Faq from "../app/components/Faq";
 import Cta from "../app/components/Cta";
 import Rodape from "../app/components/Rodape";
 import NavBar from "../app/components/NavBar";
+import NossaEquipe from "../app/components/EquipeMembros";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
       <NavBar />
       <Hero />
+      <NossaEquipe/>
       <Clientes />
       <Destaques />
       <Depoimentos />
