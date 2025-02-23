@@ -1,27 +1,48 @@
 .navbar {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    background: linear-gradient(to bottom right, #d1006e, #001a42, #00007b);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-  }
-  
-  .logo img {
-    height: 40px;
-  }
-  
-  .navLinks {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navLinks li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
+  position: relative;
+  width: 100%;
+  height: 50px; /* Altura menor para parecer mais clean */
+  background-color: #000b4f; /* Azul escuro sólido */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: white; /* Mantendo a caixa branca */
+  padding: 5px 10px; /* Melhor espaçamento na borda branca */
+  border-radius: 4px; /* Suavizando as bordas */
+}
+
+.logo img {
+  height: 30px; /* Reduzindo o tamanho do logo */
+  width: auto;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Reduzindo o espaçamento entre os itens */
+  padding: 0;
+  margin: 0;
+}
+
+.navLinks li {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400; /* Fonte mais leve */
+  font-size: 14px; /* Ajuste no tamanho da fonte */
+  transition: opacity 0.3s ease;
+}
+
+.navLinks li a:hover {
+  opacity: 0.8;
+}
