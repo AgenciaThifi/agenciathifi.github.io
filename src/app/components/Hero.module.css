@@ -1,15 +1,17 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 140vh;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-top: 70px; /* Evita sobreposição da navbar */
 }
 
+/* Fundo animado com cores da identidade */
 .hero::before {
   content: "";
   position: absolute;
@@ -27,21 +29,61 @@
   );
   animation: girarFundo 10s linear infinite;
   filter: blur(50px);
+  z-index: -1;
 }
 
-
-
+/* Animação de rotação do fundo */
 @keyframes girarFundo {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-/* Garante que o conteúdo fique acima do fundo animado */
-.hero > .relative {
+/* Seção Clientes */
+.clientes {
+  background-color: black;
+  width: 100%;
+  min-height: 400px;
+  padding: 20px 10px;
+  padding-top: 0px;
+  text-align: center;
   position: relative;
-  z-index: 10;
+  top: 180px; /* Ajuste para sobrepor a Hero */
+  z-index: 1;
+}
+
+.clientes::before {
+  content: "";
+  position: absolute;
+  top: -150px; /* Define o início do degradê, ajustável */
+  left: 0;
+  width: 100%;
+  height: 150px; /* Define a altura da transição */
+  background: linear-gradient(to bottom, rgba(11, 42, 102, 0), black);
+  z-index: 0; /* Mantém o degradê atrás do conteúdo */
+}
+
+
+/* Texto da Seção Clientes */
+.clientes h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Logos dos Clientes */
+.clientesLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.clientesLogos img {
+  max-width: 120px;
+  height: auto;
+  filter: brightness(0) invert(1); /* Deixa os logos brancos */
 }
