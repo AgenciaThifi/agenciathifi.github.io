@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #111;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e5e5e5;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #999;
+    margin-top: 0.5rem;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .card {
+    min-width: 300px;
+    background: #f3f3f3;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .image {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+  }
+  
+  .serviceTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  

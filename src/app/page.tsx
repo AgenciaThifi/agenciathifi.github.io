@@ -7,19 +7,21 @@ import Cta from "../app/components/Cta";
 import Rodape from "../app/components/Rodape";
 import NavBar from "../app/components/NavBar";
 import NossaEquipe from "../app/components/EquipeMembros";
+import Chat from "../app/components/Chat"; // Verifique se o caminho e o nome do arquivo estão corretos
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
       <NavBar />
       <Hero />
-      <NossaEquipe/>
+      <NossaEquipe />
       <Clientes />
       <Destaques />
       <Depoimentos />
       <Faq />
       <Cta />
       <Rodape />
+      <Chat /> {/* Aqui o chat flutuante será renderizado */}
     </main>
   );
 }
