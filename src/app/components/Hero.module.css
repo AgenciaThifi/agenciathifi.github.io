@@ -18,12 +18,14 @@
   height: 250%;
   background: conic-gradient(
     from 0deg,
-    #0b2a66  50deg, #0b2a66  64deg, 
-    #1a48e094 75deg, #173bb1 150deg, 
-    #800080 175deg, #800080 190deg, #d10070 290deg, 
-    #0b2a66  325deg
+    #0b2a66 30deg, #14459a 60deg, 
+    #1a48e0 100deg, #173bb1 140deg, 
+    #6d0096 180deg, #a0006c 220deg, 
+    #d10070 260deg, #800080 300deg, 
+    #0b2a66 340deg
   );
   animation: girarFundo 10s linear infinite;
+  filter: blur(50px);
 }
 
 @keyframes girarFundo {
