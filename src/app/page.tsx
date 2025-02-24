@@ -14,10 +14,10 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center">
       <NavBar />
       <Hero />
-      <NossaEquipe />
-      <Destaques />
       <Depoimentos />
       <Faq />
+      <NossaEquipe />
+      <Destaques />
       <Cta />
       <Rodape />
       <Chat /> {/* Aqui o chat flutuante será renderizado */}
