@@ -8,14 +8,14 @@ import Alexander from "./Imagens/Alex.jpg";
 
 // Mockup de prestadores de serviços
 const prestadores = [
-  { nome: "Victor", posicao: "Desenvolvedor", descricao: "Especialista em desenvolvimento iOS e Python." },
-  { nome: "Fulano", posicao: "Editor de Vídeo", descricao: "Criação e edição de vídeos para campanhas digitais." },
-  { nome: "Cicrano", posicao: "Redatora", descricao: "Criação de textos persuasivos e roteiros para vídeos." },
-  { nome: "Maria", posicao: "Social Media", descricao: "Gestão de redes sociais e estratégias de conteúdo." },
-  { nome: "João", posicao: "Designer", descricao: "Especialista em identidade visual e branding." },
-  { nome: "Ana", posicao: "Tráfego Pago", descricao: "Gestão de anúncios para conversão e engajamento." },
-  { nome: "Pedro", posicao: "Fotógrafo", descricao: "Fotografia profissional para campanhas e marcas." },
-  { nome: "Carla", posicao: "Gestora de Projetos", descricao: "Planejamento e coordenação de estratégias digitais." },
+  { nome: "Victor de Brito", instagram: "@victor.bmc", posicao: "Desenvolvedor", descricao: "Especialista em iOS e Python." },
+  { nome: "Igor Silva", instagram: "@igorsilvadev", posicao: "Desenvolvedor", descricao: "Especialista em iOS, Front-End e Back-End." },
+  { nome: "Luiz Carlos", instagram: "@Luizcarlos.s.a", posicao: "Desenvolvedor", descricao: "Especialista em iOS." },
+  { nome: "Felipe Brigagão", instagram: "@felipealmeida7739", posicao: "Desenvolvedor", descricao: "Especialista em iOS, PHP, HTML, CSS, JS, Boostrap Framework." },
+  { nome: "Matheus Silva", instagram: "@eomatheusk", posicao: "Desenvolvedor/Produtor", descricao: "Especialista em Front-end com React, JS, ES6, Análise de dados com Python." },
+  { nome: "Luiz Cazarin", instagram: "@luiz.cazarin", posicao: "Desenvolvedor", descricao: "Especialista em Java, Spring, PostgreSQL, TypeScript, JS, Vue 2 e 3, React e Docker." },
+  { nome: "Esthefani Kivia", instagram: "@eukivia", posicao: "Consultora Comercial", descricao: "Prospecção estratégica e relacionamento com clientes para impulsionar resultados." },
+  { nome: "Pablyta", instagram: "@pablyta__", posicao: "Social Media", descricao: "Gestão de redes sociais, planejamento de postagens e interação para fortalecer marcas no digital." },
 ];
 
 export default function NossaEquipe() {
@@ -26,21 +26,18 @@ export default function NossaEquipe() {
       nome: "Douglas Figueirôa",
       posicao: "Sócio/Co-fundador",
       descricao: "Gestor de equipes e desenvolvedor web/app",
-      portfolio: "#",
       imagem: Douglas,
     },
     {
       nome: "Paulo Theilacker",
       posicao: "Sócio/Co-fundador",
       descricao: "Designer Gráfico e Marketing",
-      portfolio: "#",
       imagem: Paulo,
     },
     {
       nome: "Alexsander Nogueira",
       posicao: "Sócio/Co-fundador",
       descricao: "Gestor de equipes e Desenvolvedor web",
-      portfolio: "#",
       imagem: Alexander,
     },
   ];
@@ -50,12 +47,10 @@ export default function NossaEquipe() {
       <h2 className="text-3xl font-bold">Nossa Equipe</h2>
       <p className="text-lg mt-2">Conheça as pessoas que fazem a diferença</p>
 
-      {/* Container para garantir posicionamento correto do botão */}
-      <div className="relative max-w-5xl mx-auto w-full min-h-[500px] flex flex-col items-center">
-        {/* Botão de alternância */}
+      <div className="relative w-full max-w-7xl mx-auto min-h-[500px] flex flex-col items-center">
         {!mostrarSocios && (
           <button
-            className="absolute left-[-60px] top-1/2 -translate-y-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-md transition-transform hover:scale-110"
+            className="absolute left-5 md:left-0 top-[50%] -translate-y-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-md transition-transform hover:scale-110"
             onClick={() => setMostrarSocios(true)}
           >
             ←
@@ -64,36 +59,40 @@ export default function NossaEquipe() {
 
         {mostrarSocios && (
           <button
-            className="absolute right-[-60px] top-1/2 -translate-y-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-md transition-transform hover:scale-110"
+            className="absolute right-5 md:right-0 top-[25%] -translate-y-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-md transition-transform hover:scale-110"
             onClick={() => setMostrarSocios(false)}
           >
             →
           </button>
         )}
 
-        {/* Lista dinâmica com altura fixa */}
-        <div
-          className={`mt-6 min-h-[500px] flex-grow flex items-start justify-center transition-transform duration-500 ease-in-out ${
-            mostrarSocios ? "flex-wrap gap-12" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          }`}
-        >
+        <div className={`mt-6 flex-grow grid gap-12 transition-transform duration-500 ease-in-out 
+          ${mostrarSocios ? "grid-cols-1 md:grid-cols-3 max-w-5xl" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl"}`}>
           {mostrarSocios
             ? socios.map((membro, index) => (
-                <div key={index} className="text-center max-w-xs">
-                  <Image src={membro.imagem} alt={membro.nome} width={192} height={192} className="w-48 h-48 rounded-full mx-auto object-cover" />
-                  <h3 className="text-xl font-semibold mt-4">{membro.nome}</h3>
-                  <p className="text-gray-400 italic">{membro.posicao}</p>
-                  <p className="text-gray-300 mt-2">{membro.descricao}</p>
-                  <a href={membro.portfolio} className="text-blue-400 font-medium mt-2 inline-block">Acesse o portfólio</a>
+              <div key={index} className="text-center flex flex-col items-center w-72">
+                <div className="w-48 h-48 overflow-hidden rounded-full">
+                  <Image
+                    src={membro.imagem}
+                    alt={membro.nome}
+                    width={192}
+                    height={192}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
-              ))
+                <h3 className="text-2xl font-semibold mt-4">{membro.nome}</h3>
+                <p className="text-gray-400 italic text-base">{membro.posicao}</p>
+                <p className="text-gray-300 text-base max-w-xs mt-2">{membro.descricao}</p>
+              </div>
+            ))
             : prestadores.slice(0, 8).map((prestador, index) => (
-                <div key={index} className="text-center border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md">
-                  <h3 className="text-xl font-semibold">{prestador.nome}</h3>
-                  <p className="text-gray-400 italic">{prestador.posicao}</p>
-                  <p className="text-gray-300 mt-2">{prestador.descricao}</p>
-                </div>
-              ))}
+              <div key={index} className="text-center w-64 h-48 border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md flex flex-col justify-between overflow-hidden">
+                <h3 className="text-lg font-semibold text-ellipsis overflow-hidden">{prestador.nome}</h3>
+                <p className="text-gray-200 italic text-sm">{prestador.instagram}</p>
+                <p className="text-gray-400 italic text-sm">{prestador.posicao}</p>
+                <p className="text-gray-300 text-xs text-ellipsis overflow-hidden">{prestador.descricao}</p>
+              </div>
+            ))}
         </div>
       </div>
     </section>
