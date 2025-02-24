@@ -37,7 +37,7 @@ export default function NossaEquipe() {
       imagem: Paulo,
     },
     {
-      nome: "Alexander Nogueira",
+      nome: "Alexsander Nogueira",
       posicao: "Sócio/Co-fundador",
       descricao: "Gestor de equipes e Desenvolvedor web",
       portfolio: "#",
