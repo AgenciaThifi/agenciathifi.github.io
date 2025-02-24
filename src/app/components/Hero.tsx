@@ -8,12 +8,28 @@ export default function Hero() {
         <h1 className="text-5xl md:text-6xl font-bold leading-tight mt-2">
           Pensando no melhor, <br /> encontrando o melhor.
         </h1>
-        <p className="text-base md:text-l font-medium mt-4">
+        <p className="text-base md:text-lg font-medium mt-4">
           Estratégia, criatividade e resultados para o seu negócio crescer online.
         </p>
         <button className="mt-6 px-6 py-3 bg-white text-black rounded-lg font-semibold">
           Solicite um orçamento!
         </button>
+      </div>
+
+      {/* Seção Clientes */}
+      <div className={styles.clientes}>
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center leading-tight">
+          Junte-se a centenas de <br />
+          negócios que transformaram <br />
+          sua marca com a ThiFi.
+        </h2>
+
+        <div className={styles.clientesLogos}>
+          <img src="/logos/cliente1.png" alt="Cliente 1" />
+          <img src="/logos/cliente2.png" alt="Cliente 2" />
+          <img src="/logos/cliente3.png" alt="Cliente 3" />
+          <img src="/logos/cliente4.png" alt="Cliente 4" />
+        </div>
       </div>
     </section>
   );
