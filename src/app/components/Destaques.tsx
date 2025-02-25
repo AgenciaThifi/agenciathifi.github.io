@@ -1,6 +1,39 @@
 "use client";
 import { motion } from "framer-motion";
-import styles from "./servicos.module.css"; // Certifique-se de que o nome do arquivo está correto.
+import styles from "./servicos.module.css";
+
+// Importando as imagens corretamente
+import identidadeVisual from "@/app/components/Imagens/identidade-visual.png";
+import socialMedia from "@/app/components/Imagens/social-media.png";
+import sitesLanding from "@/app/components/Imagens/sites-landing.png";
+import marketingDigital from "@/app/components/Imagens/marketing-digital.png";
+
+const servicos = [
+  { 
+    img: identidadeVisual.src, 
+    title: "Identidade Visual", 
+    desc1: "Criamos uma identidade forte para sua marca.",  
+    desc2: "Desenvolvemos logotipos, paletas de cores e identidade visual completa."
+  },
+  { 
+    img: socialMedia.src, 
+    title: "Social Media", 
+    desc1: "Gerenciamos e potencializamos suas redes sociais.", 
+    desc2: "Criamos conteúdos estratégicos para engajamento e crescimento."
+  },
+  { 
+    img: sitesLanding.src, 
+    title: "Sites e Landing Pages", 
+    desc1: "Desenvolvemos sites modernos e responsivos.", 
+    desc2: "Sites otimizados para conversão e adaptáveis a qualquer dispositivo."
+  },
+  { 
+    img: marketingDigital.src, 
+    title: "Marketing Digital", 
+    desc1: "Ajudamos sua marca a alcançar mais clientes.", 
+    desc2: "Campanhas de tráfego pago, SEO e estratégias digitais eficientes."
+  }
+];
 
 export default function Destaques() {
   return (
@@ -14,21 +47,30 @@ export default function Destaques() {
         dragConstraints={{ left: -500, right: 0 }}
         whileTap={{ cursor: "grabbing" }}
       >
-        <div className={styles.card}>
-          <img src="/identidade-visual.png" alt="Identidade Visual" className={styles.image} />
-          <h3 className={styles.serviceTitle}>Identidade Visual</h3>
-          <p className={styles.description}>Criamos uma identidade forte para sua marca.</p>
-        </div>
-        <div className={styles.card}>
-          <img src="/social-media.png" alt="Social Media" className={styles.image} />
-          <h3 className={styles.serviceTitle}>Social Media</h3>
-          <p className={styles.description}>Gerenciamos e potencializamos suas redes sociais.</p>
-        </div>
-        <div className={styles.card}>
-          <img src="/sites-landing.png" alt="Sites e Landing Pages" className={styles.image} />
-          <h3 className={styles.serviceTitle}>Sites e Landing Pages</h3>
-          <p className={styles.description}>Desenvolvemos sites modernos e responsivos.</p>
-        </div>
+        {servicos.map((servico, index) => (
+          <div key={index} className={styles.serviceRow}>
+            {/* Se for par, imagem à esquerda, se for ímpar, imagem à direita */}
+            {index % 2 === 0 ? (
+              <>
+                <img src={servico.img} alt={servico.title} className={styles.image} />
+                <div className={styles.textContainer}>
+                  <h3 className={styles.serviceTitle}>{servico.title}</h3>
+                  <p className={styles.descriptionBold}>{servico.desc1}</p>
+                  <p className={styles.descriptionSmall}>{servico.desc2}</p>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className={styles.textContainer}>
+                  <h3 className={styles.serviceTitle}>{servico.title}</h3>
+                  <p className={styles.descriptionBold}>{servico.desc1}</p>
+                  <p className={styles.descriptionSmall}>{servico.desc2}</p>
+                </div>
+                <img src={servico.img} alt={servico.title} className={styles.image} />
+              </>
+            )}
+          </div>
+        ))}
       </motion.div>
     </section>
   );
