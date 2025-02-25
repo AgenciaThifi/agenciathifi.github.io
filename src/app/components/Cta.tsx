@@ -1,4 +1,5 @@
 export default function Cta() {
+
   return (
     <section className="w-full py-16 black text-white text-center">
       <h2 className="text-3xl font-bold">Pronto para impulsionar sua marca?</h2>
@@ -14,3 +15,5 @@ export default function Cta() {
     </section>
   );
 }
+
+
