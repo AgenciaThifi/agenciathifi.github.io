@@ -11,9 +11,16 @@ export default function Hero() {
         <p className="text-base md:text-lg font-medium mt-4">
           Estratégia, criatividade e resultados para o seu negócio crescer online.
         </p>
-        <button className="mt-6 px-6 py-3 bg-white text-black rounded-lg font-semibold">
+        
+        {/* Botão que direciona para o WhatsApp */}
+        <a
+          href="https://wa.me/61982541672?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 px-6 py-3 bg-white text-black rounded-lg font-semibold inline-block"
+        >
           Solicite um orçamento!
-        </button>
+        </a>
       </div>
 
       {/* Seção Clientes */}
