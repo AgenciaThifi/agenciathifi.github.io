@@ -10,7 +10,7 @@ export default function Depoimentos() {
         {/* Depoimento 1 */}
         <div className="relative p-[2px] rounded-xl bg-gradient-to-b from-transparent to-white">
           <div className="bg-black p-6 text-white rounded-xl shadow-lg">
-            <p className="text-gray-200">"A agência transformou nossa marca e aumentou nossas vendas!"</p>
+            <p className="text-gray-200">A agência transformou nossa marca e aumentou nossas vendas!</p>
             <span className="block mt-4 font-semibold text-gray-300">— Cliente A</span>
           </div>
         </div>
@@ -18,7 +18,7 @@ export default function Depoimentos() {
         {/* Depoimento 2 */}
         <div className="relative p-[2px] rounded-xl bg-gradient-to-b from-transparent to-white">
           <div className="bg-black p-6 text-white rounded-xl shadow-lg">
-            <p className="text-gray-200">"Profissionalismo e qualidade em cada entrega. Recomendo muito!"</p>
+            <p className="text-gray-200">Profissionalismo e qualidade em cada entrega. Recomendo muito!</p>
             <span className="block mt-4 font-semibold text-gray-300">— Cliente B</span>
           </div>
         </div>

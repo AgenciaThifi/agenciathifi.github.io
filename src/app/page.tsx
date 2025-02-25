@@ -1,5 +1,5 @@
 import Hero from "../app/components/Hero";
-import Clientes from "../app/components/Clientes";
+//import Clientes from "../app/components/Clientes";
 import Destaques from "../app/components/Destaques";
 import Depoimentos from "../app/components/Depoimentos";
 import Faq from "../app/components/Faq";
