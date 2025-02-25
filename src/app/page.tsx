@@ -7,7 +7,7 @@ import Cta from "../app/components/Cta";
 import Rodape from "../app/components/Rodape";
 import NavBar from "../app/components/NavBar";
 import NossaEquipe from "../app/components/EquipeMembros";
-import Chat from "../app/components/Chat"; // Verifique se o caminho e o nome do arquivo estão corretos
+//import Chat from "../app/components/Chat"; // Verifique se o caminho e o nome do arquivo estão corretos
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
         <Rodape />
       </section>
       
-      <Chat /> {/* Aqui o chat flutuante será renderizado */}
+      {/*<Chat />*/}
     </main>
   );
 }
