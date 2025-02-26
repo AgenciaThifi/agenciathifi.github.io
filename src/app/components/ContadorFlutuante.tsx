@@ -1,21 +1,13 @@
-"use client";
 import { useEffect, useState } from "react";
 
 export default function ContadorFlutuante() {
   const [secondsLeft, setSecondsLeft] = useState(0);
 
   useEffect(() => {
-    const storedTimestamp = localStorage.getItem("contadorTimestamp");
+    // Defina a data fixa de início (Exemplo: 26 de fevereiro de 2025, 16:00 UTC)
+    const fixedStartTime = new Date("2025-02-26T16:00:00Z").getTime();
+    const targetTime = fixedStartTime + 7 * 24 * 60 * 60 * 1000; // 1 semana após o início
 
-    let startTime: number;
-    if (storedTimestamp) {
-      startTime = parseInt(storedTimestamp, 10);
-    } else {
-      startTime = Date.now();
-      localStorage.setItem("contadorTimestamp", startTime.toString());
-    }
-
-    const targetTime = startTime + 7 * 24 * 60 * 60 * 1000; // 1 semana
     const updateTimer = () => {
       const timeLeft = Math.max(0, Math.floor((targetTime - Date.now()) / 1000));
       setSecondsLeft(timeLeft);
