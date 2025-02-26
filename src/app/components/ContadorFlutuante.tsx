@@ -1,39 +1,42 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function FloatingChat() {
-  const [timeLeft, setTimeLeft] = useState(7 * 24 * 60 * 60); // 7 dias em segundos
+export default function ContadorFlutuante() {
+  const [secondsLeft, setSecondsLeft] = useState(0);
 
   useEffect(() => {
-    const savedTime = localStorage.getItem("chatCountdown");
-    const startTime = savedTime ? parseInt(savedTime) : Date.now();
-    localStorage.setItem("chatCountdown", startTime.toString());
+    const storedTimestamp = localStorage.getItem("contadorTimestamp");
 
-    const interval = setInterval(() => {
-      const elapsed = Math.floor((Date.now() - startTime) / 1000);
-      const remaining = Math.max(7 * 24 * 60 * 60 - elapsed, 0);
-      setTimeLeft(remaining);
+    let startTime: number;
+    if (storedTimestamp) {
+      startTime = parseInt(storedTimestamp, 10);
+    } else {
+      startTime = Date.now();
+      localStorage.setItem("contadorTimestamp", startTime.toString());
+    }
 
-      if (remaining === 0) {
-        clearInterval(interval);
-      }
-    }, 1000);
+    const targetTime = startTime + 7 * 24 * 60 * 60 * 1000; // 1 semana
+    const updateTimer = () => {
+      const timeLeft = Math.max(0, Math.floor((targetTime - Date.now()) / 1000));
+      setSecondsLeft(timeLeft);
+    };
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
 
     return () => clearInterval(interval);
   }, []);
 
-  const formatTime = (seconds: number) => {
-    const days = Math.floor(seconds / (24 * 60 * 60));
-    const hours = Math.floor((seconds % (24 * 60 * 60)) / (60 * 60));
-    const minutes = Math.floor((seconds % (60 * 60)) / 60);
-    const secs = seconds % 60;
-    return `${days}d ${hours}h ${minutes}m ${secs}s`;
-  };
+  // Formatar tempo restante
+  const dias = Math.floor(secondsLeft / (24 * 3600));
+  const horas = Math.floor((secondsLeft % (24 * 3600)) / 3600);
+  const minutos = Math.floor((secondsLeft % 3600) / 60);
+  const segundos = secondsLeft % 60;
 
   return (
-    <div className="fixed bottom-4 left-4 bg-black text-white p-3 rounded-lg shadow-lg opacity-80 text-sm">
-      <p className="font-bold">Novidades chegando em...</p>
-      <p>{formatTime(timeLeft)}</p>
+    <div className="fixed bottom-4 right-4 bg-black text-white p-4 rounded-lg shadow-lg z-50">
+      <p className="font-semibold text-sm">Novidades chegando em...</p>
+      <p className="text-lg font-bold">{`${dias}d ${horas}h ${minutos}m ${segundos}s`}</p>
     </div>
   );
 }
