@@ -51,17 +51,17 @@
   padding-top: 0px;
   text-align: center;
   position: relative;
-  top: 100px; /* Diminuído de 180px para 100px */
+  top: 200px; /* Diminuído de 180px para 100px */
   z-index: 1;
 }
 
 .clientes::before {
   content: "";
   position: absolute;
-  top: -120px; /* Define o início do degradê, ajustável */
+  top: -75px; /* Define o início do degradê, ajustável */
   left: 0;
   width: 100%;
-  height: 200px; /* Define a altura da transição */
+  height: 90px; /* Define a altura da transição */
   background: linear-gradient(to bottom, rgba(11, 42, 102, 0), black 80%);
   z-index: 0; /* Mantém o degradê atrás do conteúdo */
 }
@@ -71,6 +71,9 @@
 .clientes h2 {
   color: white;
   margin-bottom: 10px;
+  position: relative;
+  top: -60px; /* Move o título para cima */
+  z-index: 2; /* Mantém ele acima do degradê */
 }
 
 /* Logos dos Clientes */
