@@ -3,6 +3,7 @@
   padding: 4rem 0;
   text-align: center;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .title {
@@ -24,6 +25,7 @@
   align-items: center;
   gap: 2rem;
   margin-top: 2rem;
+  overflow: hidden; /* Impede que o conteúdo vaze para os lados */
 }
 
 .serviceRow {
