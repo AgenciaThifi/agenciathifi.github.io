@@ -41,11 +41,7 @@ export default function Destaques() {
       <h2 className={styles.title}>Nossos Serviços</h2>
       <p className={styles.subtitle}>O que fazemos de melhor para sua marca</p>
 
-      <motion.div
-        className={styles.services}
-        drag="x"
-        dragConstraints={{ left: -20, right: 20 }} // Limita o arraste para evitar espaços em branco
-      >
+      <motion.div className={styles.services}>
         {servicos.map((servico, index) => (
           <div key={index} className={styles.serviceRow}>
             <div className={styles.textContainer}>
