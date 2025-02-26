@@ -59,7 +59,7 @@ export default function NossaEquipe() {
 
         {mostrarSocios && (
           <button
-            className="absolute right-5 md:right-0 top-[25%] -translate-y-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-md transition-transform hover:scale-110"
+            className="absolute right-5 md:right-0 top-[50%] -translate-y-1/2 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-md transition-transform hover:scale-110"
             onClick={() => setMostrarSocios(false)}
           >
             →
