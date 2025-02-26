@@ -9,28 +9,28 @@ import sitesLanding from "@/app/components/Imagens/sites-landing.png";
 import marketingDigital from "@/app/components/Imagens/marketing-digital.png";
 
 const servicos = [
-  { 
-    img: identidadeVisual.src, 
-    title: "Identidade Visual", 
-    desc1: "Criamos uma identidade forte para sua marca.",  
+  {
+    img: identidadeVisual.src,
+    title: "Identidade Visual",
+    desc1: "Criamos uma identidade forte para sua marca.",
     desc2: "Desenvolvemos logotipos, paletas de cores e identidade visual completa."
   },
-  { 
-    img: socialMedia.src, 
-    title: "Social Media", 
-    desc1: "Gerenciamos e potencializamos suas redes sociais.", 
+  {
+    img: socialMedia.src,
+    title: "Social Media",
+    desc1: "Gerenciamos e potencializamos suas redes sociais.",
     desc2: "Criamos conteúdos estratégicos para engajamento e crescimento."
   },
-  { 
-    img: sitesLanding.src, 
-    title: "Sites e Landing Pages", 
-    desc1: "Desenvolvemos sites modernos e responsivos.", 
+  {
+    img: sitesLanding.src,
+    title: "Sites e Landing Pages",
+    desc1: "Desenvolvemos sites modernos e responsivos.",
     desc2: "Sites otimizados para conversão e adaptáveis a qualquer dispositivo."
   },
-  { 
-    img: marketingDigital.src, 
-    title: "Marketing Digital", 
-    desc1: "Ajudamos sua marca a alcançar mais clientes.", 
+  {
+    img: marketingDigital.src,
+    title: "Marketing Digital",
+    desc1: "Ajudamos sua marca a alcançar mais clientes.",
     desc2: "Campanhas de tráfego pago, SEO e estratégias digitais eficientes."
   }
 ];
@@ -41,10 +41,10 @@ export default function Destaques() {
       <h2 className={styles.title}>Nossos Serviços</h2>
       <p className={styles.subtitle}>O que fazemos de melhor para sua marca</p>
 
-      <motion.div 
+      <motion.div
         className={styles.services}
         drag="x"
-        dragConstraints={{ left: -500, right: 0 }}
+        dragConstraints={{ left: -200, right: 0 }} // Reduzi o limite negativo
         whileTap={{ cursor: "grabbing" }}
       >
         {servicos.map((servico, index) => (
