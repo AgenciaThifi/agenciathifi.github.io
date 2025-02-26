@@ -44,8 +44,7 @@ export default function Destaques() {
       <motion.div
         className={styles.services}
         drag="x"
-        dragConstraints={{ left: -200, right: 0 }} // Reduzi o limite negativo
-        whileTap={{ cursor: "grabbing" }}
+        dragConstraints={{ left: -50, right: 50 }} // Limita o arraste para evitar espaços em branco
       >
         {servicos.map((servico, index) => (
           <div key={index} className={styles.serviceRow}>
