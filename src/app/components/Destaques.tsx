@@ -49,26 +49,12 @@ export default function Destaques() {
       >
         {servicos.map((servico, index) => (
           <div key={index} className={styles.serviceRow}>
-            {/* Se for par, imagem à esquerda, se for ímpar, imagem à direita */}
-            {index % 2 === 0 ? (
-              <>
-                <img src={servico.img} alt={servico.title} className={styles.image} />
-                <div className={styles.textContainer}>
-                  <h3 className={styles.serviceTitle}>{servico.title}</h3>
-                  <p className={styles.descriptionBold}>{servico.desc1}</p>
-                  <p className={styles.descriptionSmall}>{servico.desc2}</p>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className={styles.textContainer}>
-                  <h3 className={styles.serviceTitle}>{servico.title}</h3>
-                  <p className={styles.descriptionBold}>{servico.desc1}</p>
-                  <p className={styles.descriptionSmall}>{servico.desc2}</p>
-                </div>
-                <img src={servico.img} alt={servico.title} className={styles.image} />
-              </>
-            )}
+            <div className={styles.textContainer}>
+              <h3 className={styles.serviceTitle}>{servico.title}</h3>
+              <p className={styles.descriptionBold}>{servico.desc1}</p>
+              <p className={styles.descriptionSmall}>{servico.desc2}</p>
+            </div>
+            <img src={servico.img} alt={servico.title} className={styles.image} />
           </div>
         ))}
       </motion.div>
