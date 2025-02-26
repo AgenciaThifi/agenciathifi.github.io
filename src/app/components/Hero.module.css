@@ -51,7 +51,7 @@
   padding-top: 0px;
   text-align: center;
   position: relative;
-  top: 120px; /* Diminuído de 180px para 140px */
+  top: 100px; /* Diminuído de 180px para 140px */
   z-index: 1;
 }
 
