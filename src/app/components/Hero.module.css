@@ -51,18 +51,18 @@
   padding-top: 0px;
   text-align: center;
   position: relative;
-  top: 100px; /* Diminuído de 180px para 140px */
+  top: 100px; /* Diminuído de 180px para 100px */
   z-index: 1;
 }
 
 .clientes::before {
   content: "";
   position: absolute;
-  top: -150px; /* Define o início do degradê, ajustável */
+  top: -180px; /* Define o início do degradê, ajustável */
   left: 0;
   width: 100%;
-  height: 150px; /* Define a altura da transição */
-  background: linear-gradient(to bottom, rgba(11, 42, 102, 0), black);
+  height: 200px; /* Define a altura da transição */
+  background: linear-gradient(to bottom, rgba(11, 42, 102, 0), black 80%);
   z-index: 0; /* Mantém o degradê atrás do conteúdo */
 }
 
