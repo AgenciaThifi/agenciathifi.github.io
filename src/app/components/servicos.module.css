@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
   width: 100%;
   padding: 3rem 1.5rem; /* Espaçamento vertical e lateral */
 }
