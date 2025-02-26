@@ -58,7 +58,7 @@
 .clientes::before {
   content: "";
   position: absolute;
-  top: -180px; /* Define o início do degradê, ajustável */
+  top: -120px; /* Define o início do degradê, ajustável */
   left: 0;
   width: 100%;
   height: 200px; /* Define a altura da transição */
