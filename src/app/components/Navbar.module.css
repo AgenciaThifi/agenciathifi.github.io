@@ -6,12 +6,18 @@
   height: 70px;
   display: flex;
   align-items: center;
-  padding: 0 60px;
+  padding: 0 10px;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   justify-content: space-between;
   z-index: 100; /* Garante que fique acima da animação */
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none; /* Esconde os links no mobile para evitar sobrecarga */
+  }
 }
 
 .navbar::after {

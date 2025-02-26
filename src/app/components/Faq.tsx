@@ -5,11 +5,11 @@ export default function Faq() {
         <div className="max-w-2xl mx-auto mt-6 space-y-4">
           <details className="p-4 bg-black-100 rounded-lg">
             <summary className="font-semibold cursor-pointer">Quais serviços vocês oferecem?</summary>
-            <p className="mt-2 text-white-600">Trabalhamos com branding, social media, desenvolvimento web e muito mais.</p>
+            <p className="mt-2 text-white-600">Trabalhamos com branding, social media, desenvolvimento web e muito mais!</p>
           </details>
           <details className="p-4 bg-black-100 rounded-lg">
             <summary className="font-semibold cursor-pointer">Como faço para contratar?</summary>
-            <p className="mt-2 text-white-600">Entre em contato conosco pelo WhatsApp ou formulário do site.</p>
+            <p className="mt-2 text-white-600">Entre em contato conosco pelo WhatsApp, Instagram ou E-mail!</p>
           </details>
         </div>
       </section>
