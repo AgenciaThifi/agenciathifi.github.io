@@ -67,6 +67,13 @@
   } 
 }
 
+@media (max-width: 767px) { /* Mobile */
+  .clientes {
+    margin-top: 250px; /* Mantém a Forma 1 */
+    top: unset; /* Remove o ajuste do desktop */
+  }
+}
+
 .clientes::before {
   content: "";
   position: absolute;
