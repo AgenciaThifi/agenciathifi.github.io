@@ -8,7 +8,13 @@
   justify-content: center; /* Centraliza na vertical */
   align-items: center;
   text-align: center;
-  padding-top: 80px; /* Ajusta espaço para a navbar */
+  padding-top: 120px; /* Ajusta espaço para a navbar */
+}
+
+@media (min-width: 768px) { /* Ajuste para telas maiores */
+  .hero {
+    padding-top: 40px; /* Reduz no desktop */
+  }
 }
 
 /* Fundo animado com cores da identidade */
