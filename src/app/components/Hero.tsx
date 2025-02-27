@@ -39,10 +39,10 @@ export default function Hero() {
 
         {/* Logos dos clientes */}
         <div className="flex justify-center items-center gap-8 flex-wrap mt-6">
-          <Image src={Bdt} alt="BDT" height={120} />
-          <Image src={Jardim} alt="Jardim dos Idosos" height={200} />
-          <Image src={Lima} alt="Lima Viagens" height={200} />
-          <Image src={TresP} alt="Três Passos" height={200} />
+          <Image src={Bdt} alt="BDT" width={120} height={120} />
+          <Image src={Jardim} alt="Jardim dos Idosos" width={120} height={120} />
+          <Image src={Lima} alt="Lima Viagens" width={120} height={120} />
+          <Image src={TresP} alt="Três Passos" width={120} height={120} />
         </div>
       </div>
     </section>
