@@ -85,10 +85,12 @@
 /* Logos dos Clientes */
 .clientesLogos {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Para quebrar linha caso necessário */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 20px; /* Espaçamento entre as logos */
+  width: 100%; /* Ocupa toda a largura */
+  text-align: center;
 }
 
 .clientesLogos img {
