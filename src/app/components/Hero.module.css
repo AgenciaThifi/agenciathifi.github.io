@@ -57,9 +57,14 @@
   padding-top: 0px;
   text-align: center;
   position: relative;
-  margin-top: 250px;
-  /*top: 300px; /* Diminuído de 180px para 100px */
+  top: 300px; /* Diminuído de 180px para 100px */
   z-index: 1;
+}
+
+@media (min-width: 1024px) { /* Desktop */
+  .clientes {
+    top: 300px; /* Aplicando a Forma 2 no desktop */
+  }
 }
 
 .clientes::before {
