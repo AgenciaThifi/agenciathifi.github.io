@@ -8,17 +8,17 @@
   justify-content: center; /* Centraliza na vertical */
   align-items: center;
   text-align: center;
-  padding-top: 60px; /* Ajusta espaço para a navbar */
+  padding-top: 80px; /* Ajusta espaço para a navbar */
 }
 
 /* Fundo animado com cores da identidade */
 .hero::before {
   content: "";
   position: absolute;
-  top: -100%;
-  left: -100%;
-  width: 300%;
-  height: 300%;
+  top: -125%;
+  left: -125%;
+  width: 350%;
+  height: 350%;
   background: conic-gradient(
     from 0deg,
     #0b2a66 30deg, #14459a 60deg, 
