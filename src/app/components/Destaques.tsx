@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import styles from "./servicos.module.css";
 
 // Importando as imagens corretamente
-import identidadeVisual from "@/app/components/Imagens/identidade-visual.png";
-import socialMedia from "@/app/components/Imagens/social-media.png";
-import sitesLanding from "@/app/components/Imagens/sites-landing.png";
-import marketingDigital from "@/app/components/Imagens/marketing-digital.png";
+import identidadeVisual from "../components/Imagens/Logo_IDVisual.png";
+import socialMedia from "../components/Imagens/Social Media.png";
+import sitesLanding from "../components/Imagens/Logo_SiteLandingPage.png";
+import marketingDigital from "../components/Imagens/Marketing Digital.png";
 
 const servicos = [
   {
