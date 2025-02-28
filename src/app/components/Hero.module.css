@@ -1,14 +1,14 @@
 .hero {
   position: relative;
   width: 100%;
-  min-height: 160vh; /* Ocupa a tela toda */
+  min-height: 200vh; /* Ocupa a tela toda */
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centraliza na vertical */
   align-items: center;
   text-align: center;
-  padding-top: 120px; /* Ajusta espaço para a navbar */
+  padding-top: 200px; /* Ajusta espaço para a navbar */
 }
 
 @media (min-width: 768px) { /* Ajuste para telas maiores */
@@ -52,7 +52,7 @@
 .clientes {
   background-color: black;
   width: 100%;
-  min-height: 800px;
+  min-height: 900px;
   padding: 20px 10px;
   padding-top: 0px;
   text-align: center;
@@ -63,7 +63,7 @@
 
 @media (min-width: 1024px) { /* Desktop */
   .clientes {
-    top: 300px; /* Aplicando a Forma 2 no desktop */
+    top: 350px; /* Aplicando a Forma 2 no desktop */
   } 
 }
 
