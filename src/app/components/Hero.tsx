@@ -1,9 +1,4 @@
-import Image from "next/image";
 import styles from "./Hero.module.css"; // Import correto
-import Bdt from "./Imagens/logo_bdt.png";
-import Jardim from "./Imagens/logo_jardimdosidosos.png";
-import Lima from "./Imagens/logo_limaviagens.png";
-import TresP from "./Imagens/logo_trespassos.png";
 
 export default function Hero() {
   return (
