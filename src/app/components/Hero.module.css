@@ -52,7 +52,7 @@
 .clientes {
   background-color: black;
   width: 100%;
-  min-height: 400px;
+  min-height: 800px;
   padding: 20px 10px;
   padding-top: 0px;
   text-align: center;
@@ -100,15 +100,17 @@
   display: flex;
   flex-wrap: wrap; /* Para quebrar linha caso necessário */
   justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  align-items: flex-end; /* Centraliza verticalmente */
   gap: 20px; /* Espaçamento entre as logos */
   width: 100%; /* Ocupa toda a largura */
   text-align: center;
   overflow: hidden;
+  min-height: 100px;
 }
 
 .clientesLogos img {
   max-width: 120px;
   height: auto;
   filter: brightness(0) invert(1); /* Deixa os logos brancos */
+  object-fit: contain;
 }
