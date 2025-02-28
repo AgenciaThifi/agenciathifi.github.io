@@ -1,19 +1,19 @@
 .hero {
   position: relative;
   width: 100%;
-  min-height: 200vh; /* Ocupa a tela toda */
+  min-height: 120vh; /* Ocupa a tela toda */
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centraliza na vertical */
   align-items: center;
   text-align: center;
-  padding-top: 200px; /* Ajusta espaço para a navbar */
+  padding-top: 20px; /* Ajusta espaço para a navbar */
 }
 
 @media (min-width: 768px) { /* Ajuste para telas maiores */
   .hero {
-    padding-top: 40px; /* Reduz no desktop */
+    padding-top: 20px; /* Reduz no desktop */
   }
 }
 
@@ -21,10 +21,10 @@
 .hero::before {
   content: "";
   position: absolute;
-  top: -125%;
-  left: -125%;
-  width: 350%;
-  height: 350%;
+  top: -150%;
+  left: -150%;
+  width: 400%;
+  height: 400%;
   background: conic-gradient(
     from 0deg,
     #0b2a66 30deg, #14459a 60deg, 
@@ -52,7 +52,7 @@
 .clientes {
   background-color: black;
   width: 100%;
-  min-height: 900px;
+  min-height: 950px;
   padding: 20px 10px;
   padding-top: 0px;
   text-align: center;

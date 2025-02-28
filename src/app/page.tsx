@@ -1,6 +1,7 @@
 import Hero from "../app/components/Hero";
 //import Clientes from "../app/components/Clientes";
 import Destaques from "../app/components/Destaques";
+import Clientes from "../app/components/Clientes"
 import Depoimentos from "../app/components/Depoimentos";
 import Faq from "../app/components/Faq";
 import Cta from "../app/components/Cta";
@@ -16,6 +17,10 @@ export default function Home() {
       <NavBar />
       <section id="Hero" className="scroll-mt-32">
         <Hero />
+      </section>
+
+      <section id="Clientes" className="scroll-mt-32">
+        <Clientes />
       </section>
 
       <section id="Depoimentos" className="scroll-mt-32">
