@@ -8,7 +8,7 @@ export default function Clientes() {
   return (
     <section className="w-full py-16 text-center text-white relative bg-black mt-[-80px]">
       <div className="relative z-10">
-      <h2 className="text-3xl md:text-4xl font-bold text-white text-center leading-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center leading-tight">
           Junte-se a empresas que <br />
           impulsionaram suas marcas <br />
           com a ThiFi e destaque-se <br />

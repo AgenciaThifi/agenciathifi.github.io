@@ -4,9 +4,9 @@ import styles from "./servicos.module.css";
 
 // Importando as imagens corretamente
 import identidadeVisual from "../components/Imagens/Logo_IDVisual.png";
-import socialMedia from "../components/Imagens/Social Media.png";
+import socialMedia from "../components/Imagens/Logo_SocialMedia.png";
 import sitesLanding from "../components/Imagens/Logo_SiteLandingPage.png";
-import marketingDigital from "../components/Imagens/Marketing Digital.png";
+import marketingDigital from "../components/Imagens/Logo_MarketingDigital.png";
 
 const servicos = [
   {
