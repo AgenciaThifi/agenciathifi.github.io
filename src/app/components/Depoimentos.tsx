@@ -11,7 +11,7 @@ export default function Depoimentos() {
         <div className="relative p-[2px] rounded-xl bg-gradient-to-b from-transparent to-white">
           <div className="bg-black p-6 text-white rounded-xl shadow-lg">
             <p className="text-gray-200">A agência transformou nossa marca e aumentou nossas vendas!</p>
-            <span className="block mt-4 font-semibold text-gray-300">— Lima Viagens e Turismo</span>
+            <span className="block mt-4 font-semibold text-gray-300">— Três Passos Shoes</span>
           </div>
         </div>
 
@@ -19,7 +19,7 @@ export default function Depoimentos() {
         <div className="relative p-[2px] rounded-xl bg-gradient-to-b from-transparent to-white">
           <div className="bg-black p-6 text-white rounded-xl shadow-lg">
             <p className="text-gray-200">Profissionalismo e qualidade em cada entrega. Recomendo muito!</p>
-            <span className="block mt-4 font-semibold text-gray-300">— Três Passos Shoes</span>
+            <span className="block mt-4 font-semibold text-gray-300">— Batalha de Tubarão</span>
           </div>
         </div>
       </div>
