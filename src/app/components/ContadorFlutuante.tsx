@@ -6,7 +6,7 @@ export default function ContadorFlutuante() {
 
   useEffect(() => {
     // Defina a data fixa de início (Exemplo: 26 de fevereiro de 2025, 16:00 UTC)
-    const fixedStartTime = new Date("2025-02-26T16:00:00Z").getTime();
+    const fixedStartTime = new Date("2025-03-01T16:00:00Z").getTime();
     const targetTime = fixedStartTime + 7 * 24 * 60 * 60 * 1000; // 1 semana após o início
 
     const updateTimer = () => {
