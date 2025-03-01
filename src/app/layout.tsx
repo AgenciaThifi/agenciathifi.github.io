@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import icon from "../app/components/Imagens/Site_Icon.png"
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "ThiFi",
   description: "Criado por ThiFi",
   applicationName: "ThiFi",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
