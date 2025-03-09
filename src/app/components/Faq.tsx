@@ -9,7 +9,11 @@ export default function Faq() {
           </details>
           <details className="p-4 bg-black-100 rounded-lg">
             <summary className="font-semibold cursor-pointer">Como faço para contratar?</summary>
-            <p className="mt-2 text-white-600">Entre em contato conosco pelo WhatsApp ou formulário do site.</p>
+            <p className="mt-2 text-white-600">Entre em contato conosco pelo WhatsApp, E-mail ou o nosso Instagram.</p>
+          </details>
+          <details className="p-4 bg-black-100 rounded-lg">
+            <summary className="font-semibold cursor-pointer">O serviço é confiável?</summary>
+            <p className="mt-2 text-white-600">Trabalhamos constantemente com o contato direto com o cliente, mostrando a evolução e o que está sendo feito. Levamos a sério a satisfação de cada um!</p>
           </details>
         </div>
       </section>
