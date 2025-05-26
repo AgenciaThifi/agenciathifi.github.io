@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Evita erro com imagens no modo estático
   },
+  trailingSlash: true,
 };
 
 export default nextConfig;
