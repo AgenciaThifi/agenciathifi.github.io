@@ -34,6 +34,16 @@ export default function Cta() {
         >
           Instagram
         </a>
+
+        {/* Botão TikTok */}
+        <a
+          href="https://www.tiktok.com/@thifi.oficial?_t=ZM-8wgDnfjHlQL&_r=1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-black-500 text-white font-semibold rounded-xl shadow-lg border border-white hover:bg-black-600 transition"
+        >
+          TikTok
+        </a>
       </div>
     </section>
   );
