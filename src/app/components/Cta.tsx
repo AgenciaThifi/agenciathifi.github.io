@@ -4,7 +4,7 @@ export default function Cta() {
       <h2 className="text-3xl font-bold">Pronto para impulsionar sua marca?</h2>
       <p className="text-lg mt-2">Entre em contato e dê o próximo passo no digital.</p>
 
-      <div className="mt-6 flex justify-center gap-4">
+      <div className="mt-6 flex flex-wrap justify-center gap-4 max-w-xs mx-auto sm:max-w-none sm:flex-nowrap">
         {/* Botão WhatsApp */}
         <a
           href="https://wa.me/5561982541672?text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
@@ -15,7 +15,7 @@ export default function Cta() {
           WhatsApp
         </a>
 
-        {/* Botão E-mail (Abre no Gmail) */}
+        {/* Botão E-mail */}
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=thifi.contato.oficial@gmail.com"
           target="_blank"
@@ -40,7 +40,7 @@ export default function Cta() {
           href="https://www.tiktok.com/@thifi.oficial?_t=ZM-8wgDnfjHlQL&_r=1"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 py-3 bg-black-500 text-white font-semibold rounded-xl shadow-lg border border-white hover:bg-black-600 transition"
+          className="px-6 py-3 bg-black text-white font-semibold rounded-xl shadow-lg border border-white hover:bg-neutral-900 transition"
         >
           TikTok
         </a>
