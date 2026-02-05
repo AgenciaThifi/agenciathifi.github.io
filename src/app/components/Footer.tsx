@@ -251,7 +251,10 @@ export default function Footer() {
                 <li className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                   <a
-                    href="tel:+5561982541672"
+                    href="https://wa.me/5561982541672?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Enviar mensagem no WhatsApp para +55 (61) 98254-1672"
                     className="text-gray-400 hover:text-white transition-colors text-sm"
                   >
                     +55 (61) 98254-1672
