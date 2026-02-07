@@ -135,7 +135,7 @@ export default function Footer() {
               aria-label="Agendar consultoria via WhatsApp"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-10 py-5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold text-lg flex items-center gap-3 mx-auto overflow-hidden"
+              className="group relative px-10 py-5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold text-lg inline-flex items-center gap-3 mx-auto overflow-hidden"
             >
               <span className="relative z-10">Agendar Consultoria Gratuita</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform relative z-10" />
