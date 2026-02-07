@@ -127,7 +127,11 @@ export default function Footer() {
               impulsionar seus resultados
             </p>
 
-            <motion.button
+            <motion.a
+              href="https://wa.me/5561982541672?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Agendar consultoria via WhatsApp"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="group relative px-10 py-5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold text-lg flex items-center gap-3 mx-auto overflow-hidden"
@@ -140,7 +144,7 @@ export default function Footer() {
                 whileHover={{ x: 0 }}
                 transition={{ duration: 0.3 }}
               />
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </div>
